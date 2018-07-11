@@ -39,7 +39,12 @@ if (command === 'spotify-this-song') {
             return;
         }
 
-        console.log(data.tracks.items[0]);
+        console.log(
+        "______________________________________________________\n"+
+        "Artist's Name: " + data.tracks.items[0].artists[0].name,
+        "\nAlbum Name: " + data.tracks.items[0].album.name,
+        "\nSpotify Link: " + data.tracks.items[0].external_urls.spotify
+        );
     });
 
 }   
