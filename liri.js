@@ -24,11 +24,11 @@ function randomCommand() {
         searchItem = dataArr[1];
 
         if (randomCommand === 'spotify-this-song') {
-            dataArr.push(process.argv);
-            console.log(process.argv)            
+            process.argv.push(searchItem);
             spotifyThis();
         }
         if (randomCommand === 'movie-this') {
+            process.argv.push(searchItem);
             movieThis(searchItem);
         }
 
