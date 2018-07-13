@@ -137,6 +137,8 @@ function displayTweets() {
     let client = new Twitter(keys.twitter);
     console.log("____________________________");
     console.log("Here are your latest tweets. :)");
+
+    //Please add your own screen name!!
     const params = { screen_name: 'heyjasonf' };
     client.get('statuses/user_timeline', params, function (error, tweets, response) {
         if (!error) {
@@ -147,6 +149,18 @@ function displayTweets() {
     });
 
 }
+
+function intro(){
+    console.log(
+        "\nHello, I am Liri!",
+        "\nI can do these following commands...",
+        "\nmy-tweets",
+        "\nspotify-this-song '(song name)'",
+        "\nmovie-this '(movie-this)'",
+        "\ndo-what-it-says"
+    )
+}
+
 
 //------------------------------------------------
 
@@ -172,6 +186,10 @@ if (command === 'movie-this') {
 
 if (command === 'do-what-it-says') {
     randomCommand();
+}
+
+if (command === undefined){
+    intro();
 }
 //-------------------------
 
