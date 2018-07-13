@@ -1,5 +1,7 @@
 # liri-node-app 
 
+download link - https://github.com/jasonfelipe/liri-node-app
+
 Liri is a simple bot that can take three commands (as of right now)
 my-tweets - shows the last 20 tweets*
 movie-this '(movie name)'
@@ -28,19 +30,24 @@ please use a .env file inside the liri file directory and add these lines into i
 "# Spotify API keys"
 
 "SPOTIFY_ID=your-spotify-id"
+
 "SPOTIFY_SECRET=your-spotify-secret"
 
 "# Twitter API keys"
 
 "TWITTER_CONSUMER_KEY=your-twitter-consumer-key"
+
 "TWITTER_CONSUMER_SECRET=your-twitter-consumer-secret"
+
 "TWITTER_ACCESS_TOKEN_KEY=your-access-token-key"
+
 "TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret"
 
 # Authors
 Jason Felipe
 
 linkedin - https://www.linkedin.com/in/jason-felipe-089558107
+
 github - https://github.com/jasonfelipe/
 
 #Acknowledgements
