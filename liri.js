@@ -157,7 +157,9 @@ function intro(){
         "\nmy-tweets",
         "\nspotify-this-song '(song name)'",
         "\nmovie-this '(movie-this)'",
-        "\ndo-what-it-says"
+        "\ndo-what-it-says",
+        "\n\nPlease type 'node liri.js [command]' to get started!",
+        "\nIf you need help, just type 'node liri.js' again"
     )
 }
 
@@ -165,31 +167,19 @@ function intro(){
 //------------------------------------------------
 
 //-----The Commands-----
-
-//node liri.js my-tweets
-if (command === 'my-tweets') {
-    displayTweets();
-}
-
-//node liri.js spotify-this-song
-if (command === 'spotify-this-song') {
+switch (command) {
+    case 'spotify-this-song':
     spotifyThis();
-
-}
-
-//node liri.js movie-this
-if (command === 'movie-this') {
-    movieThis();
-}
-
-//do-what-it-says
-
-if (command === 'do-what-it-says') {
+    break;
+    case 'my-tweets':
+    displayTweets();
+    break;
+    case 'do-what-it-says':
     randomCommand();
-}
-
-if (command === undefined){
+    break;
+    case undefined: 
     intro();
+    break;
 }
 //-------------------------
 
